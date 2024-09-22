@@ -3087,9 +3087,9 @@ int main(void)
     MDIO_IntialPins();
     14c8:	0e 94 9b 05 	call	0xb36	; 0xb36 <MDIO_IntialPins>
 while(1){
-MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_6,MDIO_HIGH);
+MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_5,MDIO_HIGH);
     14cc:	83 e0       	ldi	r24, 0x03	; 3
-    14ce:	66 e0       	ldi	r22, 0x06	; 6
+    14ce:	65 e0       	ldi	r22, 0x05	; 5
     14d0:	41 e0       	ldi	r20, 0x01	; 1
     14d2:	0e 94 14 08 	call	0x1028	; 0x1028 <MDIO_u8SetPinValue>
     14d6:	80 e0       	ldi	r24, 0x00	; 0
@@ -3236,9 +3236,9 @@ _delay_loop_2(uint16_t __count)
     15b6:	98 8b       	std	Y+16, r25	; 0x10
     15b8:	8f 87       	std	Y+15, r24	; 0x0f
 _delay_ms(200);
-MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_6,MDIO_LOW);
+MDIO_u8SetPinValue(MDIO_PORTD,MDIO_PIN_5,MDIO_LOW);
     15ba:	83 e0       	ldi	r24, 0x03	; 3
-    15bc:	66 e0       	ldi	r22, 0x06	; 6
+    15bc:	65 e0       	ldi	r22, 0x05	; 5
     15be:	40 e0       	ldi	r20, 0x00	; 0
     15c0:	0e 94 14 08 	call	0x1028	; 0x1028 <MDIO_u8SetPinValue>
     15c4:	80 e0       	ldi	r24, 0x00	; 0
